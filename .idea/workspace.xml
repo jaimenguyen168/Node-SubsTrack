@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d982d32-c2ae-48b4-b3fc-13bd17c00613" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/auth.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/user.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/auth.middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/configs/env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
