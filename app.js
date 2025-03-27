@@ -8,6 +8,7 @@ import subscriptionRouter from "./routes/subscription.routes.js";
 import connectToMongoDB from "./database/mongodb.js";
 import errorMiddleware from "./middlewares/error.middleware.js";
 import arcjetMiddleware from "./middlewares/arcjet.middleware.js";
+import workflowRouter from "./routes/workflow.routes.js";
 
 const app = express();
 
@@ -26,8 +27,9 @@ app.use(arcjetMiddleware);
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/subscriptions", subscriptionRouter);
+app.use("/api/v1/workflows", workflowRouter);
 
-app.use(errorMiddleware)
+app.use(errorMiddleware);
 
 app.get("/", (req, res) => {
   res.send("Welcome to the Subscription Tracker app!");
@@ -38,7 +40,7 @@ app.listen(PORT, async () => {
     `Subscription Tracker API is running on http://localhost:${PORT}`,
   );
 
-  await connectToMongoDB()
+  await connectToMongoDB();
 });
 
 export default app;
