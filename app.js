@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to the Subscription Tracker app!");
 });
 
-app.listen(PORT, async () => {
+app.listen(PORT, "0.0.0.0", async () => {
   console.log(
     `Subscription Tracker API is running on http://localhost:${PORT}`,
   );
