@@ -24,7 +24,7 @@ const subscriptionSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    enum: ["Entertainment", "Food", "Health", "Travel", "News", "Other"],
+    enum: ["Entertainment", "Food", "Shopping", "Health", "Travel", "News", "Other"],
     required: [true, "Subscription category is required"],
   },
   paymentMethod: {
@@ -47,7 +47,6 @@ const subscriptionSchema = new mongoose.Schema({
   },
   renewalDate: {
     type: Date,
-    required: [true, "Subscription renewal date is required"],
     validate: {
       validator: (value) => value > this.startDate,
       message: "Subscription renewal date must be in the future",
